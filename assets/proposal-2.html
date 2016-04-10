@@ -67,6 +67,16 @@ h3 {
     vertical-align: baseline;
 }
 
+#menu-content a {
+	color: gray;
+	text-decoration: none;
+}
+
+#menu-content a:hover{
+	color: #f3989b;
+	text-decoration: none;
+}
+
 #menu-content ul li {
     font-family: "Fira Mono";
     text-transform: uppercase;
@@ -132,12 +142,14 @@ li.check {
 background: url('check-brown.png') no-repeat left top;
 padding-left: 34px;
 padding-bottom: 15px;
+text-align: justify;
 }
 
 li.check-2 {
 background: url('check-purple.png') no-repeat left top;
 padding-left: 34px;
 padding-bottom: 15px;
+text-align: justify;
 }
 
 .seq .seq-pagination .seq-current {
@@ -148,6 +160,18 @@ padding-bottom: 15px;
 .seq .seq-pagination > * {
 	border: #9A8CA5 solid 2px;
 }
+
+img.opacity {
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+img.opacity:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+
 </style>
 </head>
 <body>
@@ -157,7 +181,7 @@ padding-bottom: 15px;
 <div id="menu-content">
 <ul class="menu"><li class="menu-item"><a href="../index.html" title="" class="">START</a></li>
 		<li class="menu-item"><a href="proposal-1.html" title="">Proposal 1</a></li>
-		<li class="menu-item"><a title="">Proposal 2</a></li>
+		<li class="menu-item">Proposal 2</li>
 		<li class="menu-item"><a href="#" title="">Final thoughts</a></li>
 </ul>	
 </div>
@@ -251,8 +275,8 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     <td style="padding-left:20px; color:#777; width: 440px;">  
 <ul class="no-bullet">
   <li class="check-2">The quiz questions are grouped in categories and once the user selects a category we will display only the specific questions for that category. Once these are answered, he can move on to the next category in the list. </li>
-  Below is an example of an animation we like:
-<br><img src="https://d13yacurqjgara.cloudfront.net/users/25514/screenshots/1928659/delivery-app-iphone-ux-ui-design-ramotion.gif" style="margin-top:10px;" width="400px">  
+  <p style="margin-left:32px;">Below is an example of an animation for this part:
+<br><img class="opacity" src="https://d13yacurqjgara.cloudfront.net/users/25514/screenshots/1928659/delivery-app-iphone-ux-ui-design-ramotion.gif" style="margin-top:10px;" width="399px"> </p> 
 </ul>
 
 	</td> 
